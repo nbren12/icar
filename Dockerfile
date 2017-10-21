@@ -10,4 +10,5 @@ ADD ./ /icar
 
 RUN make -C /icar install FC=gfortran INSTALLDIR=/usr/local/bin
 
+WORKDIR /run
 CMD icar
