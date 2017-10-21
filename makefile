@@ -68,14 +68,14 @@ endif
 F90=${FC}
 
 ifndef FFTW
-	FFTW=/usr/local
+	FFTW=/usr/
 endif
 FFTW_PATH = ${FFTW}
 LIBFFT = -L${FFTW_PATH}/lib -lm -lfftw3
 INCFFT = -I${FFTW_PATH}/include
 
 ifndef NETCDF
-	NETCDF=/usr/local
+	NETCDF=/usr/
 endif
 NCDF_PATH = ${NETCDF}
 LIBNETCDF = -L$(NCDF_PATH)/lib -lnetcdff -lnetcdf
